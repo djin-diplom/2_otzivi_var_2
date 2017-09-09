@@ -1,12 +1,12 @@
 <?php
 
 function rand_podstav_smv($text){
-     // $text = str_replace('х','x',$text);
-    // $text = str_replace('а','a',$text);
-   // $text = str_replace('р','p',$text);
-   $text = str_replace('о','o',$text);
-   $text = str_replace('е','e',$text);
-    //$text = str_replace('с','c',$text);
+      $text = str_replace('х','x',$text);
+     $text = str_replace('а','a',$text);
+    $text = str_replace('р','p',$text);
+  // $text = str_replace('о','o',$text);//исп
+   //$text = str_replace('е','e',$text);//исп
+    $text = str_replace('с','c',$text);
     return $text;
 }
 
