@@ -56,7 +56,7 @@ $mainContent = str_replace('Rosdiplom.ru', 'Knowbaza.ru', $mainContent  );
 $mainContent = str_replace('ROSDIPLOM.RU', 'KNOWBAZA.RU', $mainContent  );
 $mainContent = str_replace('ROSDIPLOM', 'KNOWBAZA', $mainContent  );
 
-$mainContent = str_replace('http://xn--d1acynfdde.xn--p1ai/fi/www.znaniumbaza.ru.jpg', $main_name.'/fi/baza.png', $mainContent  );
+$mainContent = str_replace('http://xn--d1acynfdde.xn--p1ai/fi/www.knowbaza.ru.jpg', $main_name.'/fi/baza.png', $mainContent  );
 $mainContent = str_replace('Rosdiplom', 'Knowbaza', $mainContent  );
 $mainContent = str_replace('г. Москва</span>, <span itemprop="streetAddress">ст.м. Метро Сухаревская, ул.Сретенка, д.27/29, стр 1',
     'г. Санкт-Петербург</span>, <span itemprop="streetAddress">ул. Академика Лебедева, дом № 12, oф. 169-170', $mainContent  );
