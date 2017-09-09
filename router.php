@@ -69,8 +69,8 @@ $mainContent = str_replace('Публикации</a>', '</a>', $mainContent  );
 $mainContent = str_replace('это интересно</a>', '</a>', $mainContent  );
 
 $mainContent = str_replace('</title>', '</title> 
-<meta name="yandex-verification" content="f918e574e079a6fb" /> 
-<meta name="google-site-verification" content="CdU3O1i3Zh3DXbQUUGGG6CMTX1lVVeOKOPRsPcTKh4k" />', $mainContent  );
+<meta name="yandex-verification" content="6c18c97caadc2f96" />
+<meta name="google-site-verification" content="SLlYRglDfPxciJvir29kiPj4a-3-22-0kBQM8P_NriU" />', $mainContent  );
 
 $mainContent = rand_podstav_smv($mainContent);
 
