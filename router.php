@@ -15,11 +15,11 @@ $REQUEST_URI = $_SERVER['REQUEST_URI'];
 
 $REQUEST_URI = $main_name.$REQUEST_URI;
 
-$REQUEST_URI = str_replace( '177-rosdiplom', '404-error', $REQUEST_URI  );
+$REQUEST_URI = str_replace( '177-rosdiplom', '404-error', $REQUEST_URI  );//new
 
 $REQUEST_URI = str_replace( 'knowbaza.ru', 'rosdiplom_ru', $REQUEST_URI  );
 
-$REQUEST_URI = str_replace( '1001', '177', $REQUEST_URI  );
+$REQUEST_URI = str_replace( '1001', '177', $REQUEST_URI  );//new
 
 $contentTitle = str_replace($main_name, $donor_name, $REQUEST_URI );
 
@@ -78,7 +78,7 @@ $mainContent = str_replace('</title>', '</title>
 
 $mainContent = rand_podstav_smv($mainContent);
 
-$mainContent = str_replace('177', '1001', $mainContent  );
+$mainContent = str_replace('177', '1001', $mainContent  );//new
 
 
 echo $mainContent;
