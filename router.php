@@ -15,7 +15,11 @@ $REQUEST_URI = $_SERVER['REQUEST_URI'];
 
 $REQUEST_URI = $main_name.$REQUEST_URI;
 
+$REQUEST_URI = str_replace( '177-rosdiplom', '404-error', $REQUEST_URI  );
+
 $REQUEST_URI = str_replace( 'knowbaza.ru', 'rosdiplom_ru', $REQUEST_URI  );
+
+$REQUEST_URI = str_replace( '1001', '177', $REQUEST_URI  );
 
 $contentTitle = str_replace($main_name, $donor_name, $REQUEST_URI );
 
@@ -73,6 +77,8 @@ $mainContent = str_replace('</title>', '</title>
 <meta name="google-site-verification" content="SLlYRglDfPxciJvir29kiPj4a-3-22-0kBQM8P_NriU" />', $mainContent  );
 
 $mainContent = rand_podstav_smv($mainContent);
+
+$mainContent = str_replace('177', '1001', $mainContent  );
 
 
 echo $mainContent;
