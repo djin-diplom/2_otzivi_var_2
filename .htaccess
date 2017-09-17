@@ -1,3 +1,7 @@
+Redirect 301 /177-rosdiplom.html http://viva-students.ru/
+Redirect 301 /177-knowbaza_ru.html http://viva-students.ru/1001-knowbaza_ru.html
+
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
