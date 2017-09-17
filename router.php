@@ -17,6 +17,8 @@ $REQUEST_URI = $main_name.$REQUEST_URI;
 
 $REQUEST_URI = str_replace( '177-rosdiplom.html', '', $REQUEST_URI  );//new
 
+$REQUEST_URI = str_replace( '177-knowbaza_ru.html', '', $REQUEST_URI  );//new
+
 $REQUEST_URI = str_replace( '177', '', $REQUEST_URI  );//new
 
 $REQUEST_URI = str_replace( '1001-knowbaza_ru', '177-rosdiplom_ru', $REQUEST_URI  );//new

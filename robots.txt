@@ -1,3 +1,4 @@
 User-agent: *
-Allow: /
+Allow: /1001-knowbaza_ru.html
+Disallow: /
 Host: viva-students.ru
