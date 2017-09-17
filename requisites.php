@@ -9,7 +9,7 @@ $donor_site_name = 'Студенту.рф';
 $site_name = "Студенческие работы";
 
 $raskrutka_site_1 = 'knowbaza.ru';
-$raskrutka_site_2 = 'knowbaza';
+$raskrutka_site_2 = 'Knowbaza';
 $raskrutka_site_3 = 'KNOWBAZA.RU';
 $raskrutka_site_4 = 'knowbaza_ru';
 
