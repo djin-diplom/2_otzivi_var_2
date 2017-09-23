@@ -1,5 +1,6 @@
 Redirect 301 /177-rosdiplom.html http://viva-students.ru/
 Redirect 301 /177-knowbaza_ru.html http://viva-students.ru/1001-knowbaza_ru.html
+Redirect 301 /page,1,2,177-knowbaza_ru.html http://viva-students.ru/page,1,2,1001-knowbaza_ru.html
 
 
 RewriteEngine On
