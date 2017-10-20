@@ -25,7 +25,26 @@ $REQUEST_URI = str_replace( '1001-'.$raskrutka_site_4, '177-rosdiplom_ru', $REQU
 
 $contentTitle = str_replace($main_name, $donor_name, $REQUEST_URI );
 
-$mainContent = file_get_contents($contentTitle);
+switch($contentTitle) {
+    case 'http://xn--d1acynfdde.xn--p1ai/177-rosdiplom_ru.html':
+        $mainContent = file_get_contents('177-rosdiplom_ru.html');
+        break;
+    case 'http://xn--d1acynfdde.xn--p1ai/page,1,2,177-rosdiplom_ru.html':
+        $mainContent = file_get_contents('page,1,2,177-rosdiplom_ru.html');
+        break;
+    case 'http://xn--d1acynfdde.xn--p1ai/':
+        $mainContent = file_get_contents('httpxn--d1acynfdde.xn--p1ai.html');
+        break;
+    case 'http://xn--d1acynfdde.xn--p1ai/reviews/':
+        $mainContent = file_get_contents('httpxn--d1acynfdde.xn--p1aireviews.html');
+        break;
+    case 'http://vivastudent.ru/company-rating.html':
+        $mainContent = file_get_contents('httpvivastudent.rucompany-rating.html');
+        break;
+    default:
+        $mainContent = file_get_contents($contentTitle);
+        break;
+}
 
 $mainContent = str_replace($donor_name, $main_name, $mainContent  );
 $mainContent = str_replace('url(/fi', 'url('.$donor_name.'/fi', $mainContent  );
@@ -58,6 +77,7 @@ $mainContent = str_replace('РосДипломе', $raskrutka_site_1, $mainConte
 $mainContent = str_replace('РосДипломом', $raskrutka_site_2, $mainContent  );
 $mainContent = str_replace('РосДиплом', $raskrutka_site_3, $mainContent  );
 $mainContent = str_replace('rosdiplom.ru', $raskrutka_site_1, $mainContent  );
+$mainContent = str_replace('rosdiplom.su', $raskrutka_site_1, $mainContent  );
 $mainContent = str_replace('Rosdiplom.ru', $raskrutka_site_1, $mainContent  );
 $mainContent = str_replace('ROSDIPLOM.RU', $raskrutka_site_1, $mainContent  );
 $mainContent = str_replace('ROSDIPLOM', $raskrutka_site_2, $mainContent  );
@@ -67,8 +87,8 @@ $mainContent = str_replace('Rosdiplom', $raskrutka_site_2, $mainContent  );
 $mainContent = str_replace('г. Москва</span>, <span itemprop="streetAddress">ст.м. Метро Сухаревская, ул.Сретенка, д.27/29, стр 1',
     $raskrutka_site_adress, $mainContent  );
 $mainContent = str_replace('8-800-555-05-66: +7 (495) 987-41-36', 'Компания работает без телефонных менеджеров', $mainContent  );
-$mainContent = str_replace('/goto.php?url=d3d3LnJvc2RpcGxvbS5ydQ==', 'http://'.$raskrutka_site_1.'/', $mainContent  );
-$mainContent = str_replace('/goto.php?url=cm9zZGlwbG9tLnJ1L3JlZmVyZXIuYXNweD9yZWY9c3R1ZGVudHU=', 'http://'.$raskrutka_site_1.'/order.php', $mainContent  );
+$mainContent = str_replace('/goto.php?url=cm9zZGlwbG9tLnN1', 'http://'.$raskrutka_site_1.'/', $mainContent  );
+$mainContent = str_replace('/goto.php?url=aHR0cHM6Ly9yb3NkaXBsb20uc3UvcmVmZXJlci5hc3B4P3JlZj1zdHVkZW50dQ==', 'http://'.$raskrutka_site_1.'/order.php', $mainContent  );
 
 $mainContent = str_replace('rosdiplom_ru', $raskrutka_site_4, $mainContent  );
 $mainContent = str_replace('Публикации</a>', '</a>', $mainContent  );
